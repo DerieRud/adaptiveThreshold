@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive Threshold Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Adaptive Threshold Visualization</h1>
+        
+        <div class="controls">
+            <div class="input-group">
+                <label for="dataInput">Input Data (comma-separated numbers):</label>
+                <input type="text" id="dataInput" value="100, 105, 0, 0, 145, 150, 155, 160, 165, 170, 175, 0">
+            </div>
+            
+            <div class="input-group">
+                <label for="minPeriods">Min Periods:</label>
+                <input type="number" id="minPeriods" value="1" min="1" max="10">
+            </div>
+            
+            <div class="input-group">
+                <label for="weightIncrement">Weight Increment:</label>
+                <input type="number" id="weightIncrement" value="0.05" min="0.01" max="1" step="0.01">
+            </div>
+            
+            <div class="input-group">
+                <label for="progressPercentage">Progress Percentage (%):</label>
+                <input type="number" id="progressPercentage" value="110" min="100" max="200" step="1">
+            </div>
+            
+            <button id="calculateBtn">Calculate & Visualize</button>
+        </div>
+        
+        <div class="chart-container">
+            <canvas id="chart"></canvas>
+        </div>
+        
+        <div class="log-container">
+            <h3>Algorithm Logs</h3>
+            <div id="logs"></div>
+        </div>
+    </div>
+    
+    <script src="adaptiveThreshold.js"></script>
+    <script src="visualization.js"></script>
+    <script src="adaptiveThreshold_original.js"></script>
+</body>
+</html> 
