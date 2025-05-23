@@ -104,7 +104,7 @@ function createChart(inputData, thresholds, thresholdsOriginal, progressPercenta
                 },
                 {
                     type: 'line',
-                    label: 'New Upper Threshold',
+                    label: 'New green zone',
                     data: upperThresholds,
                     borderColor: 'rgba(75, 192, 75, 1)',
                     borderWidth: 2,
@@ -115,7 +115,7 @@ function createChart(inputData, thresholds, thresholdsOriginal, progressPercenta
                 },
                 {
                     type: 'line',
-                    label: 'New Lower Threshold',
+                    label: 'New green zone',
                     data: lowerThresholds,
                     borderColor: 'rgba(75, 192, 75, 1)',
                     borderWidth: 2,
@@ -127,7 +127,7 @@ function createChart(inputData, thresholds, thresholdsOriginal, progressPercenta
                 },
                 {
                     type: 'line',
-                    label: 'Original Upper Threshold',
+                    label: 'Original green zone',
                     data: upperThresholdsOriginal,
                     borderColor: 'rgba(255, 99, 132, 1)',
                     borderWidth: 2,
@@ -139,7 +139,7 @@ function createChart(inputData, thresholds, thresholdsOriginal, progressPercenta
                 },
                 {
                     type: 'line',
-                    label: 'Original Lower Threshold',
+                    label: 'Original green zone',
                     data: lowerThresholdsOriginal,
                     borderColor: 'rgba(255, 99, 132, 1)',
                     borderWidth: 2,
